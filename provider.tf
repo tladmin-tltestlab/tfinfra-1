@@ -1,5 +1,5 @@
 provider "google" {
-  project = "tfinfra-1" # The specific spoke project
+  project = "tltestlab-project1" # The specific spoke project
 }
 
 # This block creates the connection for "Hop 1" (The "Hub"). 
