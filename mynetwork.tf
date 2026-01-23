@@ -19,7 +19,7 @@ resource "google_compute_firewall" "mynetwork-allow-http-ssh-rdp-icmp" {
   source_ranges = ["0.0.0.0/0"]
 }
 # Create the mynet-vm instances
-# will create two GCE instances if the "enable_compute_lab" variable in the instance module is set to true
+# will create 2 GCE instances if the "enable_compute_lab" variable in the instance module is set to true
 module "mynet-vm-instances" {
   source           = "./instance"
   instance_name    = "mynet-vm-"
