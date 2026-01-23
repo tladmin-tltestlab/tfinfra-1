@@ -23,6 +23,6 @@ resource "google_compute_firewall" "mynetwork-allow-http-ssh-rdp-icmp" {
 module "mynet-vm-instances" {
   source           = "./instance"
   instance_name    = "mynet-vm-"
-  instance_zone    = "europe-west3"
+  instance_zone    = "europe-west3-a"
   instance_network = google_compute_network.mynetwork.self_link
 }
